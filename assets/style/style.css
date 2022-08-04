@@ -21,6 +21,9 @@ body {
 .justify-start {
   justify-content: flex-start;
 }
+.justify-center {
+  justify-content: center;
+}
 
 .container {
   max-width: 1200px;
@@ -39,7 +42,6 @@ body {
 
 .main {
   padding: 88px 0 80px;
-  height: 100vh;
 }
 .main__row {
   width: 100%;
@@ -70,6 +72,32 @@ body {
   text-align: center;
 }
 
+.cards {
+  position: relative;
+}
+.cards__sale {
+  position: absolute;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #FFFFFF;
+  background: #E62D2D;
+  border-radius: 10px;
+  width: 78px;
+  height: 39px;
+  top: 32px;
+  left: 32px;
+}
+.cards__like {
+  position: absolute;
+  fill: rgba(255, 255, 255, 0.5);
+  top: 33px;
+  right: 8px;
+  transition: 0.3s;
+}
+.cards__like:hover {
+  fill: rgb(255, 255, 255);
+}
 .cards svg {
   margin-right: 18px;
 }
@@ -85,7 +113,10 @@ body {
   margin-bottom: 22px;
 }
 .cards__title {
-  margin: 0;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29px;
+  color: #000000;
 }
 .cards__content {
   padding: 29px;
@@ -119,6 +150,14 @@ body {
   border-bottom-right-radius: 5px;
   width: 380px;
   height: 65px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  transition: 0.3s;
+}
+.cards__btn:hover {
+  background: #1F2021;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -23,6 +23,9 @@ body {
   &-start {
     justify-content: flex-start;
   }
+  &-center {
+    justify-content: center;
+  }
 }
 .container {
   max-width: 1200px;
@@ -42,7 +45,6 @@ body {
 
 .main {
   padding: 88px 0 80px;
-  height: 100vh;
 
   &__row {
     width: 100%;
@@ -79,6 +81,30 @@ body {
 }
 
 .cards {
+  position: relative;
+  &__sale {
+    position: absolute;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: #FFFFFF;
+    background: #E62D2D;
+    border-radius: 10px;
+    width: 78px;
+    height: 39px;
+    top: 32px;
+    left: 32px;
+  }
+  &__like {
+    position: absolute;
+    fill: rgba(255, 255, 255, 0.5);
+    top: 33px;
+    right: 8px;
+    transition: 0.3s;
+    &:hover {
+      fill: rgba(255, 255, 255, 1);
+    }
+  }
   & svg {
     margin-right: 18px;
   }
@@ -94,7 +120,10 @@ body {
     margin-bottom: 22px;
   }
   &__title {
-    margin: 0;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    color: #000000;
   }
   &__content {
     padding: 29px;
@@ -129,5 +158,13 @@ body {
     border-bottom-right-radius: 5px;
     width: 380px;
     height: 65px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    transition: 0.3s;
+    &:hover {
+      background: #1F2021;
+    }
   }
 }
