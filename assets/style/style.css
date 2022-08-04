@@ -75,6 +75,7 @@ body {
 }
 .cards__col {
   margin-left: 22px;
+  width: 82px;
 }
 .cards__col2 {
   margin-left: 40px;
